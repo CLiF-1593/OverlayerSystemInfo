@@ -72,6 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>D:\Development\ProgrammingProject\Tool\SystemInfoLib\OverlayerSysInfo\OverlayerSysInfo;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Development\ProgrammingProject\Tool\SystemInfoLib\OverlayerSysInfo\x64\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>D:\Development\ProgrammingProject\Tool\SystemInfoLib\OverlayerSysInfo\OverlayerSysInfo;$(IncludePath)</IncludePath>
@@ -133,6 +134,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OverlayerSysInfo.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

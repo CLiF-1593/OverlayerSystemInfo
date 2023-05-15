@@ -1,13 +1,8 @@
 #include "pch.h"
 #include "CPU.h"
-#include <intrin.h>
-#include <Windows.h>
 #include <string>
 #include <iostream>
-#include <Pdh.h>
 using namespace std;
-
-#define ADOFAI_CAPTION L"A Dance of Fire and Ice"
 
 class CPU_Info {
 public:
