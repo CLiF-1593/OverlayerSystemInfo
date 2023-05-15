@@ -233,9 +233,9 @@ PDH_HQUERY CPU::cpuQuery;
 PDH_HCOUNTER CPU::cpuTotal;
 
 const char* OSI_CPU_Name() {
-	string str = CPU::GetCpuName();
-	char* ret = new char[str.size()];
-	strcpy(ret, str.c_str());
+	const char* str = CPU::GetCpuName().c_str();
+	char* ret = new char[strlen(str)];
+	strcpy(ret, str);
 	return ret;
 }
 

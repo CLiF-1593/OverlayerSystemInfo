@@ -3,9 +3,6 @@
 #include <Windows.h>
 using namespace std;
 int main() {
-	while (true) {
-		cout << OSI_CPU_TotalUsage() << endl;
-		Sleep(100);
-	}
+	cout << OSI_CPU_Name() << endl;
 	return 0;
 }
